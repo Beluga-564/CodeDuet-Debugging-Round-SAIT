@@ -8,8 +8,8 @@
  * @param size the number of elements in the array
  *
  */
-#include <iostream>
-
+#include<bits/stdc++.h>
+using namespace std;
 int maxValue(int *arr, int size)
 {
     int *max = arr;
@@ -21,13 +21,13 @@ int maxValue(int *arr, int size)
         }
         arr++;
     }
-    return max;
+    return *max;
 }
 
 int main()
 {
     int arr[] = {10, 20, 5, 30, 15};
-    int size = sizeof(arr) / sizeof(arr);
+    int size = sizeof(arr) / sizeof(int);
 
     int max = maxValue(arr, size);
 
